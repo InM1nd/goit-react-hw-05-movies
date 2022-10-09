@@ -2,7 +2,7 @@ import { useState, useEffect, Suspense } from 'react';
 import { useParams, Link, Outlet, useLocation } from 'react-router-dom';
 import { fetchMovieDetails } from '../../api/Api';
 import MoviePublic from '../../components/MovieCard/MovieCard';
-import Spinner from '../../components/Spinner/Spinner';
+// import Spinner from '../../components/Spinner/Spinner';
 
 export default function MovieDetails() {
   const { movieId } = useParams();
