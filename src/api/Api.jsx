@@ -23,7 +23,7 @@ const BASE_URL = `https://api.themoviedb.org/3`;
 
 export async function fetchMovieTrending(){
     return await axios(
-        `${BASE_URL}/trending/all/day?api_key=${API_KEY}`
+        `${BASE_URL}/trending/movie/day?api_key=${API_KEY}`
     );
  }
 
