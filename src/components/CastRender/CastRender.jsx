@@ -1,7 +1,7 @@
 import s from './CastRender.module.css';
 
 export default function CastRender({ cast }) {
-  return (
+  return cast.length > 0 ? (
     <ul className={s.cast_items}>
       {cast.map(item => (
         <li key={item.id} className={s.cast_item}>
@@ -15,5 +15,7 @@ export default function CastRender({ cast }) {
         </li>
       ))}
     </ul>
+  ) : (
+    <span className={s.text}>We don't have cast list for this movie</span>
   );
 }
